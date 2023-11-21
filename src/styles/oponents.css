@@ -1,0 +1,138 @@
+.main_oponent-left {
+    position: relative;
+    background-color: #fff;
+    align-self: flex-start;
+    height: 50%;
+    width: 35%;
+    font-size: 65%;
+}
+
+.main_oponent-left::before {
+    content: '';
+    position: absolute;
+    bottom: -0.9em;
+    right: -4.2em;
+    width: 2em;
+    height: 10.2rem;
+    transform: rotate(30deg);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main_oponent-left::after {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 15%;
+    top: 0;
+    right: -4.8rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.main_oponent-left-content::before {
+    content: '';
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    clip-path: polygon(0 0, 66% 0, 20% 100%, 0% 100%);
+    background-color: #fff;
+    right: -5.9rem;
+    top: 1.3rem;
+}
+
+.main_oponent-right {
+    background-color: #fff;
+    position: relative;
+    align-self: flex-end;
+    height: 50%;
+    width: 35%;
+    font-size: 65%;
+}
+
+
+.main_oponent-right::before {
+    content: '';
+    position: absolute;
+    top: -1em;
+    left: -4.2em;
+    width: 2em;
+    height: 10.2rem;
+    transform: rotate(30deg);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+.main_oponent-right::after {
+    content: '';
+    position: absolute;
+    width: 9em;
+    height: 15%;
+    bottom: 0;
+    left: -7.6em;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+.main_oponent-right-content,
+.main_oponent-left-content {
+    display: flex;
+    height: 100%;
+}
+
+
+.main_oponent-right-content::before {
+    content: '';
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 44% 100%);
+    background-color: #fff;
+    left: -5.9rem;
+    top: 1.8rem;
+}
+
+.oponent-right_name,
+.oponent-left_name {
+    font-size: 3rem;
+    font-weight: 600;
+    align-self: center;
+}
+
+.main_oponent-left-content {
+    justify-content: end;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .main_oponent-right,
+    .main_oponent-left {
+        width: 30%;
+    }
+
+    .oponent-right_name,
+    .oponent-left_name {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 860px) {
+
+    .main_oponent-right,
+    .main_oponent-left {
+        width: 20%;
+    }
+
+    .oponent-right_name,
+    .oponent-left_name {
+        font-size: 1.5rem;
+    }
+}

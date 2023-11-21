@@ -1,0 +1,109 @@
+.app_header-wrapper {
+    padding: 3vh 4vw 0 4vw;
+    height: 4vh;
+}
+
+.app_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.header_nav {
+    display: flex;
+    flex-basis: 45%;
+    justify-content: space-between;
+}
+
+
+
+.header_tickets-main,
+.header_how-buy,
+.header_rools,
+.header_return-ticket {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.header_tickets-main {
+    font-weight: 800;
+}
+
+.header_tickets-main:hover,
+.header_how-buy:hover,
+.header_rools:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.header_return-ticket:hover {
+    cursor: default;
+    color: transparent;
+    transition: all 0.3s;
+}
+
+
+
+
+.header_right-block {
+    display: flex;
+    align-items: center;
+    width: 14%;
+    justify-content: space-between;
+}
+
+.header_enter-block {
+    display: flex;
+    position: relative;
+    align-items: end;
+}
+
+.header_enter-logo {
+    position: absolute;
+    height: 2rem;
+    left: -2rem;
+    bottom: -0.3rem
+}
+
+.header_enter-text {
+    color: #fff;
+}
+
+
+.header_burger {
+    position: relative;
+}
+
+.burger_middle {
+    height: 2px;
+    width: 1.5rem;
+    background-color: #fff;
+}
+
+.header_burger::before,
+.header_burger::after {
+    height: 2px;
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    right: 0;
+}
+
+.header_burger::before {
+    width: 2.2rem;
+    top: .5rem;
+}
+
+.header_burger::after {
+    width: 2.5rem;
+    bottom: .5rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .header_nav {
+        opacity: 0;
+    }
+}

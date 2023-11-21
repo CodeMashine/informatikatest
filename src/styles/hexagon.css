@@ -1,0 +1,133 @@
+.main_hexagon {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    transition: all 2s;
+    margin: auto;
+}
+
+.main_hexagon,
+.main_hexagon::before,
+.main_hexagon::after {
+    width: 4rem;
+    height: 7rem;
+    border-radius: 20%/5%;
+}
+
+.main_hexagon::before {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(-60deg);
+}
+
+.main_hexagon::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(60deg);
+}
+
+.hexagon_content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 115%;
+    height: 60%;
+    line-height: 1.2;
+    z-index: 100;
+}
+
+.active>.hexagon_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.hexagon_place {
+    font-size: 0.6rem;
+}
+
+.hexagon_date {
+    font-weight: 600;
+}
+
+.hexagon_time {
+    font-size: 1rem;
+}
+
+.hexagon_buy-btn {
+    font-size: .5rem;
+    padding: .2rem;
+}
+
+.hexagon_day {
+    font-size: 1.5rem;
+}
+
+.hexagon_month {
+    font-size: .8rem;
+}
+
+.active {
+    background-color: #fff;
+    transform: scale(2.5);
+}
+
+.middle {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.slave {
+    background-color: #fff;
+    transform: scale(1.5);
+}
+
+.upper {
+    grid-column: 4/5;
+    grid-row: 2/3
+}
+
+.lower {
+    grid-column: 2/3;
+    grid-row: 4/5
+}
+
+.first {
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.last {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .main_hexagon,
+    .main_hexagon::before,
+    .main_hexagon::after {
+        width: 3rem;
+        height: 5rem;
+    }
+
+    .hexagon_date {
+        font-size: .7rem;
+    }
+
+    .hexagon_buy-btn {
+        font-size: .5rem;
+        padding: 0;
+    }
+}
