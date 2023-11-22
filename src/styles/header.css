@@ -1,6 +1,7 @@
 .app_header-wrapper {
-    padding: 3vh 4vw 0 4vw;
-    height: 4vh;
+    padding-top: 4.2vh;
+    padding-left: 4vw;
+    padding-right: 2.5vw;
 }
 
 .app_header {
@@ -12,8 +13,9 @@
 
 .header_nav {
     display: flex;
-    flex-basis: 45%;
+    flex-basis: 44%;
     justify-content: space-between;
+    margin-right: 2.7rem;
 }
 
 
@@ -28,8 +30,27 @@
 }
 
 .header_tickets-main {
+    font-size: 19px;
+    letter-spacing: 0.5px;
     /* font-weight: 800; */
 }
+
+.header_how-buy,
+.header_rools,
+.header_return-ticket {
+    font-size: 18px;
+}
+
+.header_rools {
+    /* margin-left: -2.5rem; */
+}
+
+.header_return-ticket {
+    margin-right: 0.5rem;
+}
+
+
+
 
 .header_tickets-main:hover,
 .header_how-buy:hover,
@@ -63,12 +84,15 @@
 .header_enter-logo {
     position: absolute;
     height: 2rem;
-    left: -2rem;
-    bottom: -0.3rem
+    left: -0.7rem;
+    bottom: -0.3rem;
 }
 
 .header_enter-text {
     color: #fff;
+    padding-left: 1.5rem;
+    font-size: 17px;
+    letter-spacing: 0.2px;
 }
 
 
@@ -78,7 +102,7 @@
 
 .burger_middle {
     height: 2px;
-    width: 1.5rem;
+    width: 1rem;
     background-color: #fff;
 }
 
@@ -92,12 +116,12 @@
 }
 
 .header_burger::before {
-    width: 2.2rem;
+    width: 1.5rem;
     top: .5rem;
 }
 
 .header_burger::after {
-    width: 2.5rem;
+    width: 1.8rem;
     bottom: .5rem;
 }
 
