@@ -131,3 +131,10 @@
         padding: 0;
     }
 }
+
+
+@media screen and (max-width: 650px) {
+    .active {
+        transform: scale(2)
+    }
+}
