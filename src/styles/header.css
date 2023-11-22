@@ -104,6 +104,6 @@
 
 @media screen and (max-width: 1000px) {
     .header_nav {
-        opacity: 0;
+        display: none;
     }
 }
