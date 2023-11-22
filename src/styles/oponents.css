@@ -13,8 +13,8 @@
     bottom: -0.9em;
     right: -4.2em;
     width: 2em;
-    height: 10.2rem;
-    transform: rotate(30deg);
+    height: 11.4rem;
+    transform: rotate(28deg);
     background-color: #fff;
     border-radius: 10px;
 }
@@ -34,7 +34,7 @@
 .main_oponent-left-content::before {
     content: '';
     position: absolute;
-    height: 6rem;
+    height: 7rem;
     width: 6rem;
     clip-path: polygon(0 0, 66% 0, 20% 100%, 0% 100%);
     background-color: #fff;
@@ -58,8 +58,8 @@
     top: -1em;
     left: -4.2em;
     width: 2em;
-    height: 10.2rem;
-    transform: rotate(30deg);
+    height: 11.4rem;
+    transform: rotate(28deg);
     background-color: #fff;
     border-radius: 10px;
 }
@@ -87,14 +87,15 @@
 
 
 .main_oponent-right-content::before {
-    content: '';
-    position: absolute;
-    height: 6rem;
-    width: 6rem;
-    clip-path: polygon(90% 0, 100% 0, 100% 100%, 44% 100%);
+    z-index: 20;
     background-color: #fff;
-    left: -5.9rem;
-    top: 1.8rem;
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 44% 100%);
+    content: "";
+    height: 7rem;
+    left: -6.8rem;
+    position: absolute;
+    top: 2rem;
+    width: 7rem;
 }
 
 .oponent-right_name,
