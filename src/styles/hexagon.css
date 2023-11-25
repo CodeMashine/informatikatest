@@ -1,7 +1,7 @@
 .main_hexagon {
     position: relative;
     background-color: #fff;
-    text-align: center;
+    /* text-align: center; */
     transition: all 2s;
     margin: auto;
 }
@@ -9,9 +9,9 @@
 .main_hexagon,
 .main_hexagon::before,
 .main_hexagon::after {
-    width: 4rem;
-    height: 7rem;
-    border-radius: 20%/5%;
+    width: 3.5rem;
+    height: 5.6rem;
+    border-radius: 9%/5%;
 }
 
 .main_hexagon::before {
@@ -33,6 +33,7 @@
 .hexagon_content {
     position: absolute;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: space-evenly;
     top: 50%;
@@ -48,36 +49,41 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    height: 75%;
 }
 
 .hexagon_place {
     font-size: 0.6rem;
+    font-weight: 800;
 }
 
 .hexagon_date {
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 .hexagon_time {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    font-weight: 800;
 }
 
 .hexagon_buy-btn {
-    font-size: .5rem;
-    padding: .2rem;
+    width: 75%;
+    font-size: 0.4rem;
+    height: 25%;
+    margin: 0 auto;
 }
 
 .hexagon_day {
     font-size: 1.5rem;
+    font-weight: 800;
 }
 
 .hexagon_month {
     font-size: .8rem;
+    font-weight: 800;
 }
 
 .active {
-    background-color: #fff;
     transform: scale(2.5);
 }
 
@@ -87,7 +93,6 @@
 }
 
 .slave {
-    background-color: #fff;
     transform: scale(1.5);
 }
 
@@ -95,6 +100,18 @@
     grid-column: 4/5;
     grid-row: 2/3
 }
+
+.hide {
+    opacity: 0;
+}
+
+/* .upper {
+    position: absolute;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    top: -1rem;
+    right: 1.2rem;
+} */
 
 .lower {
     grid-column: 2/3;
@@ -127,8 +144,7 @@
     }
 
     .hexagon_buy-btn {
-        font-size: .5rem;
-        padding: 0;
+        font-size: .3rem;
     }
 }
 

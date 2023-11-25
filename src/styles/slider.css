@@ -14,8 +14,9 @@
 
 .slider-content {
     position: absolute;
-    height: 90vh;
-    width: 90vw;
+    /* top: 1rem; */
+    height: 74%;
+    width: 77%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);

@@ -13,40 +13,45 @@
 
 .header_nav {
     display: flex;
-    flex-basis: 44%;
-    justify-content: space-between;
-    margin-right: 2.7rem;
+    flex-basis: 46%;
+    justify-content: space-around;
+    /* margin-right: 1.5rem;v */
 }
-
-
 
 .header_tickets-main,
 .header_how-buy,
 .header_rools,
 .header_return-ticket {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
     text-decoration: none;
     color: #fff;
     transition: all 0.3s;
 }
 
 .header_tickets-main {
-    font-size: 19px;
-    letter-spacing: 0.5px;
+    font-size: 20px;
+    letter-spacing: 2.5px;
     /* font-weight: 800; */
 }
 
 .header_how-buy,
 .header_rools,
 .header_return-ticket {
-    font-size: 18px;
+    font-size: 22px;
+}
+
+.header_how-buy {
+    /* letter-spacing: 1.5px; */
 }
 
 .header_rools {
+    letter-spacing: 2.5px;
     /* margin-left: -2.5rem; */
 }
 
 .header_return-ticket {
-    margin-right: 0.5rem;
+    letter-spacing: 2px;
+    /* margin-right: 0.5rem; */
 }
 
 
@@ -71,7 +76,7 @@
 .header_right-block {
     display: flex;
     align-items: center;
-    width: 14%;
+    width: 15%;
     justify-content: space-between;
 }
 
@@ -84,20 +89,20 @@
 .header_enter-logo {
     position: absolute;
     height: 2rem;
-    left: -0.7rem;
-    bottom: -0.3rem;
+    left: -1rem;
 }
 
 .header_enter-text {
     color: #fff;
-    padding-left: 1.5rem;
-    font-size: 17px;
-    letter-spacing: 0.2px;
+    padding-left: 1.2rem;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 
 .header_burger {
     position: relative;
+    padding-right: 1rem;
 }
 
 .burger_middle {
@@ -112,7 +117,7 @@
     position: absolute;
     content: '';
     background-color: #fff;
-    right: 0;
+    right: 1rem;
 }
 
 .header_burger::before {
