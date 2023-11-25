@@ -15,3 +15,10 @@
     justify-content: space-between;
     margin-bottom: 3.5rem;
 }
+
+
+@media screen and (max-width:700px) {
+    .main_content {
+        height: 31%;
+    }
+}

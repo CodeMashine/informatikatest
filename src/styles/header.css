@@ -2,6 +2,7 @@
     padding-top: 4.2vh;
     padding-left: 4vw;
     padding-right: 2.5vw;
+    padding-right: 3.5vh;
 }
 
 .app_header {
@@ -102,10 +103,12 @@
 
 .header_burger {
     position: relative;
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
 }
 
 .burger_middle {
+    position: absolute;
+    right: 1rem;
     height: 2px;
     width: 1rem;
     background-color: #fff;
@@ -134,5 +137,17 @@
 @media screen and (max-width: 1000px) {
     .header_nav {
         display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header_right-block {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header_right-block {
+        width: 25%;
     }
 }
