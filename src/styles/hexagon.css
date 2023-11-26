@@ -1,7 +1,6 @@
 .main_hexagon {
     position: relative;
     background-color: #fff;
-    /* text-align: center; */
     transition: all 2s;
     margin: auto;
 }
@@ -105,14 +104,6 @@
     opacity: 0;
 }
 
-/* .upper {
-    position: absolute;
-    grid-column: 4/5;
-    grid-row: 2/3;
-    top: -1rem;
-    right: 1.2rem;
-} */
-
 .lower {
     grid-column: 2/3;
     grid-row: 4/5
@@ -131,9 +122,6 @@
 
 
 @media screen and (max-width: 1000px) {
-
-
-
     .hexagon_date {
         font-size: .7rem;
     }

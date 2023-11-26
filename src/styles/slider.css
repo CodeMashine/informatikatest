@@ -14,7 +14,6 @@
 
 .slider-content {
     position: absolute;
-    /* top: 1rem; */
     height: 74%;
     width: 77%;
     display: grid;
@@ -30,10 +29,3 @@
         width: 100%;
     }
 }
-
-/* @media screen and (max-width: 1100px) { */
-/* .slider-content { */
-/* height: 90%; */
-/* width: 100%; */
-/* } */
-/* } */

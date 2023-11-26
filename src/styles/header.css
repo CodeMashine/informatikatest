@@ -2,7 +2,7 @@
     padding-top: 4.2vh;
     padding-left: 4vw;
     padding-right: 2.5vw;
-    padding-right: 3.5vh;
+    padding-bottom: 3.8vh;
 }
 
 .app_header {
@@ -16,7 +16,6 @@
     display: flex;
     flex-basis: 46%;
     justify-content: space-around;
-    /* margin-right: 1.5rem;v */
 }
 
 .header_tickets-main,
@@ -41,18 +40,12 @@
     font-size: 22px;
 }
 
-.header_how-buy {
-    /* letter-spacing: 1.5px; */
-}
-
 .header_rools {
     letter-spacing: 2.5px;
-    /* margin-left: -2.5rem; */
 }
 
 .header_return-ticket {
     letter-spacing: 2px;
-    /* margin-right: 0.5rem; */
 }
 
 
@@ -103,7 +96,6 @@
 
 .header_burger {
     position: relative;
-    /* padding-right: 1rem; */
 }
 
 .burger_middle {

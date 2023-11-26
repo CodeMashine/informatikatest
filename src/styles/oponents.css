@@ -107,32 +107,18 @@
 }
 
 .oponent-right_name {
-    margin-left: 0.5rem
+    /* margin-left: 0.5rem */
+    margin-left: 0.1rem
 }
 
 .oponent-left_name {
-    margin-right: 0.5rem
+    /* margin-right: 0.5rem */
+    margin-right: 0.1rem
 }
 
 .main_oponent-left-content {
     justify-content: end;
 }
-
-
-/* @media screen and (max-width: 1150px) {
-
-    .main_oponent-right,
-    .main_oponent-left {
-        width: 34%;
-    }
-
-    .oponent-right_name,
-    .oponent-left_name {
-        font-size: 2rem;
-    }
-} */
-
-
 
 @media screen and (max-width: 950px) {
 
@@ -140,11 +126,6 @@
     .main_oponent-left {
         width: 30%;
     }
-
-    /* .oponent-right_name,
-    .oponent-left_name {
-        font-size: 1.5rem;
-    } */
 }
 
 
@@ -187,15 +168,46 @@
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 950px) {
+
+    .main_oponent-right,
+    .main_oponent-left {
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
 
     .main_oponent-right,
     .main_oponent-left {
         width: 25%;
     }
 
-    /* .oponent-right_name,
+}
+
+@media screen and (max-width: 500px) {
+
+    .main_oponent-right,
+    .main_oponent-left {
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .main_oponent-right,
+    .main_oponent-left {
+        width: 15%;
+    }
+
+    .oponent-right_name,
     .oponent-left_name {
-        font-size: 1.5rem;
-    } */
+        font-size: 1rem;
+    }
+
+
+
+
 }
