@@ -1,6 +1,8 @@
 .app_header-wrapper {
-    padding: 3vh 4vw 0 4vw;
-    height: 4vh;
+    padding-top: 4.2vh;
+    padding-left: 4vw;
+    padding-right: 2.5vw;
+    padding-bottom: 3.8vh;
 }
 
 .app_header {
@@ -12,24 +14,42 @@
 
 .header_nav {
     display: flex;
-    flex-basis: 45%;
-    justify-content: space-between;
+    flex-basis: 46%;
+    justify-content: space-around;
 }
-
-
 
 .header_tickets-main,
 .header_how-buy,
 .header_rools,
 .header_return-ticket {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
     text-decoration: none;
     color: #fff;
     transition: all 0.3s;
 }
 
 .header_tickets-main {
-    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    /* font-weight: 800; */
 }
+
+.header_how-buy,
+.header_rools,
+.header_return-ticket {
+    font-size: 22px;
+}
+
+.header_rools {
+    letter-spacing: 2.5px;
+}
+
+.header_return-ticket {
+    letter-spacing: 2px;
+}
+
+
+
 
 .header_tickets-main:hover,
 .header_how-buy:hover,
@@ -50,7 +70,7 @@
 .header_right-block {
     display: flex;
     align-items: center;
-    width: 14%;
+    width: 15%;
     justify-content: space-between;
 }
 
@@ -63,12 +83,14 @@
 .header_enter-logo {
     position: absolute;
     height: 2rem;
-    left: -2rem;
-    bottom: -0.3rem
+    left: -1rem;
 }
 
 .header_enter-text {
     color: #fff;
+    padding-left: 1.2rem;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 
@@ -77,8 +99,10 @@
 }
 
 .burger_middle {
+    position: absolute;
+    right: 1rem;
     height: 2px;
-    width: 1.5rem;
+    width: 1rem;
     background-color: #fff;
 }
 
@@ -88,16 +112,16 @@
     position: absolute;
     content: '';
     background-color: #fff;
-    right: 0;
+    right: 1rem;
 }
 
 .header_burger::before {
-    width: 2.2rem;
+    width: 1.5rem;
     top: .5rem;
 }
 
 .header_burger::after {
-    width: 2.5rem;
+    width: 1.8rem;
     bottom: .5rem;
 }
 
@@ -105,5 +129,17 @@
 @media screen and (max-width: 1000px) {
     .header_nav {
         display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header_right-block {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header_right-block {
+        width: 25%;
     }
 }

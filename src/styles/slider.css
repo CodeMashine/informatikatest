@@ -14,10 +14,18 @@
 
 .slider-content {
     position: absolute;
-    height: 90vh;
-    width: 90vw;
+    height: 74%;
+    width: 77%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     transition: all 2s;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .slider-content {
+        height: 95%;
+        width: 100%;
+    }
 }

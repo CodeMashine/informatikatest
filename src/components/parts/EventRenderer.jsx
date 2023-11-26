@@ -48,6 +48,10 @@ function EventRenderer({ event, index }) {
     nameClass += ' last';
   }
 
+  if (index >= datas.eventsMiddle + 1 + active || index <= active - datas.eventsMiddle - 1) {
+    nameClass += ' hide';
+  }
+
   if (index === active) {
     output = (
       <div className={nameClass} onClick={test}>
